@@ -1,0 +1,8 @@
+ordlista = ['huset', 'trädet', 'rörelse', 'personlig', 'byggnaden', 'skorstenen', 'barnet', 'flickan', 'pojken', 'människan', 'världen', 'samhället', 'skolan', 'bruka', 'bara', 'vandra', 'olja', 'solpanel', 'åsna', 'häst', 'återhållsam', 'åkeri', 'valbar', 'företaget', 'förskolan', 'gymnasiet', 'universitetet', 'kontoret', 'affären', 'restaurangen', 'bilen', 'bussen', 'tåget', 'planen', 'båten', 'cykeln', 'skogen', 'havet', 'berget', 'floden', 'sjön', 'ön', 'sken', 'morgonen', 'eftermiddagen', 'kvällen', 'natten', 'vintern', 'våren', 'sommaren', 'hösten', 'januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december', 'måndag', 'tisdag', 'onsdag', 'torsdag', 'fredag', 'lördag', 'söndag', 'veckan', 'månaden', 'året', 'blev', 'grön', 'lila', 'lilja', 'undersöka', 'herre', 'miljö', 'sticka', 'svin', 'rolig', 'trasa', 'trasig', 'finns', 'tangent', 'bord', 'tangentbord', 'gula', 'vila', 'sova', 'annars', 'puta', 'måla', 'elak', 'ansvarsfull', 'orolig', 'skratta', 'strax', 'skulle', 'sekunden', 'minuten', 'timme', 'dagen', 'måltid', 'frukosten', 'lunchen', 'middag', 'glaset', 'mugg', 'tallriken', 'besticken', 'skeden', 'gaffeln', 'kniven', 'spadet', 'virka', 'tåga', 'stiga', 'avtal', 'kanske', 'styckvis', 'pund', 'gråhårig', 'majestät', 'lite', 'saxen', 'pennan', 'pappret', 'anteckningsboken', 'boken', 'tidningen', 'datorn', 'telefon', 'teven', 'radion', 'musiken', 'biljett', 'kupongen', 'pengarna', 'plånbok', 'nyckeln', 'dörren', 'låset', 'klockan', 'väckarklockan', 'spegeln', 'sängen', 'madrassen']
+
+for word in ordlista:
+    word_part = word[0:2] + word[-2:]
+    word_length = len(word)
+
+    if word_length != 4 and word_part in ordlista:
+        print(word)
